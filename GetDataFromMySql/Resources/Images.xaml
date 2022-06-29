@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib"
+                    xmlns:Converters="clr-namespace:GetDataFromMySql.Converters">
+    <Converters:ResourceToMediaImageConverter x:Key="ResourceToMediaImageConverter" />
+    <!-- Usage exemple-->
+    <System:String x:Key="OpenFolder">icons8_abrir_pasta_40</System:String>
+    <Style x:Key="OpenFolderImage" TargetType="Image">
+        <Setter Property="Source" Value="{Binding Source={StaticResource OpenFolder},Converter={StaticResource ResourceToMediaImageConverter}}"/>
+    </Style>
+    <System:String x:Key="MysqlIcon">mysql_database_logo_data_base_512</System:String>
+    <Style x:Key="MysqlIconImage" TargetType="Image">
+        <Setter Property="Source" Value="{Binding Source={StaticResource MysqlIcon},Converter={StaticResource ResourceToMediaImageConverter}}"/>
+    </Style>
+    <System:String x:Key="ListIcon">_33_512</System:String>
+    <Style x:Key="ListIconImage" TargetType="Image">
+        <Setter Property="Source" Value="{Binding Source={StaticResource ListIcon},Converter={StaticResource ResourceToMediaImageConverter}}"/>
+    </Style>
+</ResourceDictionary>

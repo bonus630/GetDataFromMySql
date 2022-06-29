@@ -1,0 +1,21 @@
+﻿<Window x:Class="TestMysqlCDRAuto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestMysqlCDRAuto"
+       
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closed="Window_Closed" Loaded="Window_Loaded">
+    <DockPanel>
+        <Grid x:Name="menu" DockPanel.Dock="Left" Width="220">
+            <ListView >
+                <ListViewItem Content="Custumers" Tag="0" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp"/>
+                <ListViewItem Content="MySql Config" Tag="1" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp"/>
+                <ListViewItem Content="Folders" Tag="2" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp"/>
+            </ListView>
+        </Grid>
+        <ScrollViewer x:Name="MainContent" DockPanel.Dock="Left" Width="auto"/>
+
+    </DockPanel>
+</Window>
